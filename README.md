@@ -1,6 +1,6 @@
-# SOCRATE
+# SoCRATe
 
-## Build Setup
+## Build and Run Locally 
 
 ```bash
 # install dependencies
@@ -18,6 +18,18 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+## Run using Docker 
+If you have Docker installed on your machine you can run the web application contaneirized
+
+```bash
+# create the socrate web app
+$ docker build . -t socrate
+
+# run socrate web app
+$ docker run -p 3000:3000 --network host socrate
+```
+Your app will be availble on localhost:3000
 
 ## Special Directories
 
