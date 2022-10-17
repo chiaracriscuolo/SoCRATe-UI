@@ -1,6 +1,24 @@
 # SoCRATe-UI
 
+This repository contains the User Interface (UI) of SoCRATe (demo paper accepted at CIKM 2022).
+To use the UI you have to clone this repository and run it in two different ways:
+- use the system with Docker (kindly suggested, especially for windows and mac users),
+- build and run the application locally.
+
+## Run using Docker 
+If you have Docker installed on your machine you can run the web application contaneirized, otherwise to use the UI you need to download Docker for your operation system.
+
+```bash
+# create the socrate web app
+$ docker build . -t socrate
+
+# run socrate web app
+$ docker run -p 3000:3000 --network host socrate
+```
+Your app will be availble on localhost:3000
+
 ## Build and Run Locally 
+You first need to download Node.js and npm
 
 ```bash
 # install dependencies
@@ -18,18 +36,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Run using Docker 
-If you have Docker installed on your machine you can run the web application contaneirized
-
-```bash
-# create the socrate web app
-$ docker build . -t socrate
-
-# run socrate web app
-$ docker run -p 3000:3000 --network host socrate
-```
-Your app will be availble on localhost:3000
 
 ## Special Directories
 
