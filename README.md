@@ -1,4 +1,4 @@
-# SoCRATe
+# SoCRATe-UI
 
 ## Build and Run Locally 
 
